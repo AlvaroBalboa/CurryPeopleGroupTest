@@ -16,6 +16,15 @@ public class User {
     @Column(nullable = false)
     String dateofbirth;
 
+    @Column(nullable = false)
+    String placeofbirth;
+
+    @Column(nullable = false)
+    String enlistmentdate;
+
+    @Column(nullable = false)
+    String eaos;
+
     public int getId() {
         return id;
     }
@@ -76,14 +85,5 @@ public class User {
     public User() {
 
     }
-
-    @Column(nullable = false)
-    String placeofbirth;
-
-    @Column(nullable = false)
-    String enlistmentdate;
-
-    @Column(nullable = false)
-    String eaos;
 
 }
